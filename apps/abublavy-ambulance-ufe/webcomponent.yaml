@@ -16,7 +16,6 @@ spec:
           value: http://localhost:5000/api
         - name: ambulance-id
           value: bobulova
-      hash-suffix: v1alpha2
       path: abublavy-ambulance-wl # cesta, ktora sa zobrazi v address bare v prehliadaci, ked bude tento mikroFE aktívny
       title: Zoznam čakajúcich abublavy # názov mikro aplikácie
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
