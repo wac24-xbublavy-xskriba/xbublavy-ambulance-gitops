@@ -10,6 +10,11 @@ commonLabels:
 
 resources:
   - ../../../apps/abublavy-ambulance-ufe
+  - ../../../apps/abublavy-ambulance-webapi
 
 components:
   - ../../../components/version-developers
+  - https://github.com/wac24-xbublavy-xskriba/xbublavy-ambulance-webapi//deployments/kustomize/components/mongodb
+
+patches:
+  - path: patches/ambulance-webapi.service.yaml
