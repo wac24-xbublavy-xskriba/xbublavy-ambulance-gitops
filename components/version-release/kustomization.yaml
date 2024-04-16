@@ -3,17 +3,20 @@ kind: Component
 images:
   - name: annotaid/ambulance-ufe
     newName: annotaid/ambulance-ufe
-    newTag: 1.0.0 #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+    newTag: 1.1.0 #aktuálna verzia docker obrazu, ktorú chcete aby používatelia - cvičiaci - videli nasadenú
+  - name: annotaid/ambulance-wl-webapi
+    newName: annotaid/ambulance-wl-webapi
+    newTag: 1.1.0
 
 replacements:
   - targets:
-    - select:
-        group: fe.milung.eu
-        version: v1
-        kind: WebComponent
-        name: abublavy-ambulance-ufe
-      fieldPaths:
-        - spec.hash-suffix
+      - select:
+          group: fe.milung.eu
+          version: v1
+          kind: WebComponent
+          name: abublavy-ambulance-ufe
+        fieldPaths:
+          - spec.hash-suffix
     source:
       version: v1
       kind: Deployment
